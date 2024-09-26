@@ -227,8 +227,15 @@ main {
    flex-wrap: wrap;
    color: #92effd;
    font-size: 1rem;
+   margin-top: 10px;
    border-bottom: 1px solid #ccd6f6;
    padding-bottom: 1rem;
+}
+.tech-stack span {
+   padding: 0.5rem 1rem;
+   border-radius: 20px;
+   background-color: #09203f;
+   box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
 }
 .project-links {
    display: flex;
