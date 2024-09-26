@@ -161,7 +161,8 @@ main {
    animation-delay: 2.5s;
 }
 .about-content,
-.project-section {
+.project-section,
+.contact-section {
    display: flex;
    flex-direction: column;
    min-height: 100vh;
@@ -169,7 +170,8 @@ main {
    padding-bottom: 30px;
 }
 .about-content h2,
-.project-section h2 {
+.project-section h2,
+.contact-section h2 {
    font-size: 2rem;
    color: #ccd6f6;
    border-bottom: 1px solid #ccd6f6;
@@ -192,6 +194,10 @@ main {
    border-radius: 10px;
    max-width: 400px;
    box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
+}
+.project-card:hover {
+   transform: scale(1.05);
+   transition: 0.5s;
 }
 .project-image {
    width: 100%;
@@ -230,6 +236,39 @@ main {
 }
 .project-links img {
    width: 35px;
+}
+.contact-section p {
+   max-width: 60%;
+}
+.socials {
+   max-width: 60%;
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+}
+.social-links {
+   display: flex;
+   flex-direction: column;
+   box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
+   padding: 1rem;
+   gap: 1rem;
+}
+.email a {
+   display: block;
+   text-decoration: none;
+   color: #92effd;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.social-links img {
+   width: 50px;
+}
+.social-links img:hover,
+.email a:hover {
+   transform: scale(1.1);
+   transition: 0.5s;
 }
 @keyframes showRight {
    100% {
