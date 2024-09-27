@@ -23,13 +23,18 @@ p {
    font-size: 1.1rem;
 }
 header {
+   width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1.2rem;
+   padding: 1rem;
    padding-left: 2rem;
    padding-right: 2rem;
+   background-color: #09203f;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   position: sticky;
+   top: 0;
+   z-index: 10;
 }
 .menu {
    width: 35px;
@@ -363,27 +368,16 @@ main {
    transform: scale(1.1);
    transition: 0.5s;
 }
-.overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 1;
-   background-color: rgba(0, 0, 0, 0);
-   animation: overlay 1s ease forwards;
-}
-@keyframes overlay {
-   100% {
-      background-color: rgba(0, 0, 0, 0.8);
-   }
-}
 @keyframes showRight {
    100% {
       width: 0px;
    }
 }
 @media screen and (max-width: 768px) {
+   main {
+      max-width: 90%;
+      padding: 1rem;
+   }
    .home-content h1 {
       font-size: 3rem;
    }
@@ -431,6 +425,7 @@ main {
 @media screen and (max-width: 480px) {
    header {
       width: 100%;
+      /* position: static; */
    }
    header nav ul {
       display: none;
@@ -484,6 +479,21 @@ main {
       width: 60%;
       align-items: center;
       justify-content: space-around;
+   }
+   .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0);
+      animation: overlay 1s ease forwards;
+   }
+   @keyframes overlay {
+      100% {
+         background-color: rgba(0, 0, 0, 0.8);
+      }
    }
    @keyframes menuOpening {
       100% {
