@@ -28,7 +28,6 @@ ScrollReveal().reveal(".slide-left", options);
 ScrollReveal().reveal(".slide-right", { ...options, origin: "right" });
 ScrollReveal().reveal(".about-content", { ...options, origin: "top" });
 
-// Define the scroll handler function
 function smoothScrollHandler(e) {
    e.preventDefault();
    const target = document.querySelector(this.getAttribute("href"));
