@@ -14,7 +14,10 @@
    <body>
       <header>
          <h1>AG</h1>
-         <nav>
+         <nav id="menu-list">
+            <div class="menu">
+               <div class="burger"></div>
+            </div>
             <ul>
                <li><a href="#home">Home</a></li>
                <li><a href="#about">About</a></li>
@@ -24,7 +27,7 @@
             </ul>
          </nav>
       </header>
-      <main>
+      <main class="container">
          <section id="home">
             <div class="home-content">
                <span>Hello, I'm</span>
@@ -49,9 +52,9 @@
             <div class="about-content">
                <h2>About Me</h2>
                <p>
-                  Hello , I am Abel and I am a web developer to be specific a
+                  Hello , I am Abel an aspiring web developer, well to be specific a
                   frontend developer. But in these recent times i have been
-                  learning backend development. and i'm enjoying it. My journey
+                  learning backend development and I'm enjoying it. My journey
                   into tech started when i joined Addis Ababa University and get
                   into the field of computer science. Before that i have got
                   some interest in programming and problem solving which started
@@ -62,9 +65,7 @@
                   developer.
                </p>
                <p>
-                  Being in the field of computer science and programming is not
-                  an easy journey with the rapid changes in technologies but it's a
-                  fun and exiting journey.As I said before currently I am pursuing a Computer Science
+                  So as I said before currently I am pursuing a Computer Science
                   degree and i am in my third year of study.while pursuing my degree
                   besides the things we learn in the university which are
                   mostly theoretical, i tried to focus on practical skills that
@@ -78,7 +79,7 @@
          </section>
          <section id="skills" class="skills-section">
             <h2>Skills</h2>
-            <div class="skill-category">
+            <div class="skill-category slide-left">
               <h3>Frontend Development</h3>
               <ul class="skill-list">
                 <li><img src="images/React.svg" alt="react"> <span>React</span></li>
@@ -88,7 +89,7 @@
                 <li><img src="images/HTML5.svg" alt="html"> <span>HTML</span></li>
               </ul>
             </div>
-            <div class="skill-category">
+            <div class="skill-category slide-right">
               <h3>Backend Development</h3>
               <ul class="skill-list">
                 <li><img src="images/Node.js.svg" alt="nodejs"> <span>NodeJs</span></li>
@@ -101,7 +102,7 @@
          <section id="projects" class="project-section">
             <h2>Projects</h2>
             <div class="project-content">
-               <div class="project-card">
+               <div class="project-card slide-left">
                   <figure>
                      <img
                         src="images/readNest-design.jpg"
@@ -140,7 +141,7 @@
                      </div>
                   </div>
                </div>
-               <div class="project-card">
+               <div class="project-card slide-right">
                   <figure>
                      <img
                         src="images/quzzical.png"
@@ -173,7 +174,7 @@
                      </div>
                   </div>
                </div>
-               <div class="project-card">
+               <div class="project-card slide-left">
                   <figure>
                      <img
                         src="images/url-shortening.jpg"
@@ -207,7 +208,7 @@
                      </div>
                   </div>
                </div>
-               <div class="project-card">
+               <div class="project-card slide-right">
                   <figure>
                      <img
                         src="images/RPS.jpg"
@@ -247,7 +248,7 @@
                </div>
             </div>
          </section>
-         <section id="contact" class="contact-section">
+         <section id="contact" class="contact-section slide-right">
             <h2>Contact Me</h2>
             <p>
                Thank you for visiting my portfolio. If you have any questions or
