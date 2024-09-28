@@ -217,7 +217,6 @@ main {
    max-width: 70%;
    margin-bottom: 20px;
 }
-/* Overall skills section styling */
 .skill-category h3 {
    font-size: 1.5rem;
    color: #92effd;
@@ -285,10 +284,6 @@ main {
    border-radius: 10px;
    max-width: 400px;
    box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
-}
-.project-card:hover {
-   transform: scale(1.05);
-   transition: 0.5s;
 }
 .project-image {
    width: 100%;
@@ -425,7 +420,6 @@ main {
 @media screen and (max-width: 480px) {
    header {
       width: 100%;
-      /* position: static; */
    }
    header nav ul {
       display: none;
