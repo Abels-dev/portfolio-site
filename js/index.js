@@ -26,7 +26,6 @@ const options = {
 
 ScrollReveal().reveal(".slide-left", options);
 ScrollReveal().reveal(".slide-right", { ...options, origin: "right" });
-ScrollReveal().reveal(".about-content", { ...options, origin: "top" });
 
 function smoothScrollHandler(e) {
    e.preventDefault();

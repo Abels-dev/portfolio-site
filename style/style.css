@@ -58,9 +58,11 @@ header {
 }
 .open-menu .menu::before {
    transform: rotate(-45deg) translate(-8px, 6px);
+   background-color: #8792af;
 }
 .open-menu .menu::after {
    transform: rotate(45deg) translate(-9px, -8px);
+   background-color: #8792af;
 }
 header ul {
    display: flex;
@@ -96,13 +98,17 @@ header h1 {
    font-size: 3rem;
 }
 main {
+   scroll-snap-type: y mandatory;
    max-width: 80%;
    margin: auto;
+}
+.scroll-section{
+   scroll-snap-align: start;
+   min-height: 100vh;
 }
 .home-content {
    display: flex;
    flex-direction: column;
-   height: 100vh;
    padding-top: 50px;
 }
 .home-content span {
@@ -198,7 +204,6 @@ main {
 .skills-section {
    display: flex;
    flex-direction: column;
-   min-height: 100vh;
    padding-top: 30px;
    padding-bottom: 30px;
 }
@@ -271,7 +276,6 @@ main {
    margin-right: 10px;
    font-size: 1.5rem;
 }
-
 .project-content {
    display: flex;
    gap: 2rem;
@@ -440,7 +444,7 @@ main {
       z-index: 10;
       padding: 3rem;
       box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
-      animation: menuOpening 1s ease forwards;
+      animation: menuOpening 0.5s ease forwards;
    }
    .open-menu ul {
       display: flex;
@@ -482,7 +486,7 @@ main {
       height: 100%;
       z-index: 1;
       background-color: rgba(0, 0, 0, 0);
-      animation: overlay 1s ease forwards;
+      animation: overlay 0.5s ease forwards;
    }
    @keyframes overlay {
       100% {
