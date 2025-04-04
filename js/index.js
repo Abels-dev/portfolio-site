@@ -20,7 +20,7 @@ const options = {
    distance: "100px",
    duration: 1000,
    easing: "ease-in-out",
-   reset: true,
+   reset: false,
    delay: 300,
 };
 
